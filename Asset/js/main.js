@@ -65,4 +65,15 @@ const soccerTeam = [
     },
 ]
 
+function getRandomNumber() {
+    return Math.floor(Math.random() * 10 + 1);
+
+}
+
+for (let i = 0; i < soccerTeam.length; i++) {
+    soccerTeam[i].foul = getRandomNumber();
+    soccerTeam[i].score = getRandomNumber();
+}
+
+console.log(soccerTeam);
 
